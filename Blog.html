@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio websites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sidebar sidebargo">
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="Intro.html">My Intro</a></li>
+                    <li> <a href="Services.html">Services</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="Contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="blogcon">
+                <h1>Blogs by Sumit</h1>
+                <div class="blogitem">
+                    <h2>Learn Javascript in a fun way</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque ea eligendi incidunt, exercitationem atque tempora sint vitae debitis officia quam aperiam, amet earum adipisci consequuntur temporibus recusandae facere. Suscipit et sed minus deserunt aliquam commodi iure delectus eos quas. Dolore aperiam eos repudiandae ullam quibusdam aut placeat ex rerum!</p>
+                    <div class="buttons" id="btn-mar" >
+                        <button type="submit" class="btn btn-primary">Read More</button>
+
+                    </div>
+                </div>
+                <div class="blogitem">
+                    <h2>Learn Javascript in a fun way</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque ea eligendi incidunt, exercitationem atque tempora sint vitae debitis officia quam aperiam, amet earum adipisci consequuntur temporibus recusandae facere. Suscipit et sed minus deserunt aliquam commodi iure delectus eos quas. Dolore aperiam eos repudiandae ullam quibusdam aut placeat ex rerum!</p>
+                    <div class="buttons" id="btn-mar">
+                        <button type="submit" class="btn btn-primary">Read More</button>
+
+                    </div>
+                </div>
+                <div class="blogitem">
+                    <h2>Learn Javascript in a fun way</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque ea eligendi incidunt, exercitationem atque tempora sint vitae debitis officia quam aperiam, amet earum adipisci consequuntur temporibus recusandae facere. Suscipit et sed minus deserunt aliquam commodi iure delectus eos quas. Dolore aperiam eos repudiandae ullam quibusdam aut placeat ex rerum!</p>
+                    <div class="buttons" id="btn-mar" >
+                        <button type="submit" class="btn btn-primary">Read More</button>
+    
+                    </div>
+                </div>
+                <div class="blogitem">
+                    <h2>Learn Javascript in a fun way</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque ea eligendi incidunt, exercitationem atque tempora sint vitae debitis officia quam aperiam, amet earum adipisci consequuntur temporibus recusandae facere. Suscipit et sed minus deserunt aliquam commodi iure delectus eos quas. Dolore aperiam eos repudiandae ullam quibusdam aut placeat ex rerum!</p>
+                    <div class="buttons" id="btn-mar" >
+                        <button type="submit" class="btn btn-primary">Read More</button>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let menutoggle = document.querySelector('.toggle');
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active')
+        }
+        document.querySelector(".toggle").addEventListener("click", ()=>{
+            document.querySelector(".sidebar").classList.toggle("sidebargo");
+            if( document.querySelector(".sidebar").classList.contains("sidebargo")){
+                setTimeout(() => {
+                    document.querySelector(".toggle").style.left = "10px";
+                    
+                }, 300);
+                
+            }
+            else{
+                setTimeout(() => {
+                    document.querySelector(".toggle").style.left = "185px";
+                    
+                }, 550);
+
+            }
+        })
+</script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio websites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sidebar sidebargo">
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="Intro.html">My Intro</a></li>
+                    <li> <a href="Services.html">Services</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="Contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="infocon">
+                <div class="devinfo">
+                    <div class="name">Sumit Debnath</div>
+                    <div class="about">Developer | Freelancer | Body builder</div>
+                    <div class="moreabout">I'm a web developer from India, who loves to code and healthy lifestyle</div>
+                    <div class="buttons">
+                        <button>Download CV</button>
+                        <a href="Contact.html"><button>Contact Me</button></a>
+
+                    </div>
+                </div>
+                <div class="devpic">
+                    <img src="dev.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let menutoggle = document.querySelector('.toggle');
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active')
+        }
+        document.querySelector(".toggle").addEventListener("click", ()=>{
+            document.querySelector(".sidebar").classList.toggle("sidebargo");
+            if( document.querySelector(".sidebar").classList.contains("sidebargo")){
+                setTimeout(() => {
+                    document.querySelector(".toggle").style.left = "10px";
+                    
+                }, 300);
+                
+            }
+            else{
+                setTimeout(() => {
+                    document.querySelector(".toggle").style.left = "185px";
+                    
+                }, 550);
+
+            }
+        })
+</script>
+
+</html>
